@@ -48,6 +48,14 @@
       ::-webkit-scrollbar-thumb:hover {
         background: rgb(94, 94, 94);
       }
+
+      
+      .background-img {
+        background-image: url(./assets/bg.jpg);
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
     </style>
   </head>
   <body>
@@ -94,7 +102,7 @@
             <span class="font-light text-4xl">Dimana Kita Berani Tampil Beda.</span>
           </h1>
           <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" class="mt-5">Dapatkan produk fashion berkualitas, kembangkan penampilanmu, jadilah beda jadilah percaya diri.</p>
-          <a href="#" class="mt-5 btn btn-outline transition-all" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Get Started</a>
+          <a href="#about" class="mt-5 btn btn-outline transition-all" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Get Started</a>
         </div>
         <div class="lg:justify-self-end justify-self-center lg:w-4/5 mt-10 lg:mt-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
           <img data-tilt data-tilt-glare data-tilt-max-glare="1" src="./assets/hero.png" alt="" />
@@ -104,7 +112,7 @@
     <!-- hero -->
 
     <!-- about us -->
-    <div class="bg-base-200">
+    <div class="bg-base-300">
       <div class="lg:w-[80%] w-[90%] lg:py-0 py-28 mx-auto" id="about">
         <div class="grid lg:grid-cols-2 grid-cols-1 lg:h-screen h-full items-center">
           <div class="lg:justify-self-start justify-self-center lg:w-4/5 mt-10 lg:mt-0 lg:order-1 order-2" data-aos="fade-up" data-aos-delay="50">
@@ -112,8 +120,8 @@
           </div>
           <div class="lg:order-2 order-1">
             <h1 class="bg-primary px-4 py-2 w-52 text-2xl text-center text-white" data-aos="fade-up" data-aos-delay="100">Tentang Kami</h1>
-            <h1 class="text-5xl mt-5" data-aos="fade-up" data-aos-delay="100">Saatnya untuk Percaya Diri, dan Berani Tampil Beda.</h1>
-            <p class="mt-5" data-aos="fade-up" data-aos-delay="150">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam illo quibusdam ex dolorem est consectetur dicta eligendi reiciendis nisi</p>
+            <h1 class="lg:text-5xl text-4xl mt-5" data-aos="fade-up" data-aos-delay="100">Saatnya untuk Percaya Diri, dan Berani Tampil Beda.</h1>
+            <p class="mt-5 lg:text-sm text-base" data-aos="fade-up" data-aos-delay="150">Viskashion atau lebih diperjelas menjadi Viska Fashion adalah e-commerce fashion yang ditujukan untuk siswa SMK Negeri 6 Surakarta agar mereka dapat membeli produk fashion berkualitas.</p>
           </div>
         </div>
       </div>
@@ -124,8 +132,8 @@
     <div class="w-[95%] lg:pt-20 py-28 mx-auto" id="collection">
       <div class="grid grid-cols-1 justify-items-center">
         <h1 class="bg-primary px-4 py-2 w-36 text-2xl text-center text-white" data-aos="fade-up">Collection</h1>
-        <h1 class="text-5xl mt-5 text-center" data-aos="fade-up" data-aos-delay="50">Best Selling Collection</h1>
-        <p class="mt-5 text-center" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam illo quibusdam ex dolorem est consectetur dicta eligendi reiciendis nisi</p>
+        <h1 class="lg:text-5xl text-4xl mt-5 text-center" data-aos="fade-up" data-aos-delay="50">Best Selling Collection</h1>
+        <p class="mt-5 text-center" data-aos="fade-up" data-aos-delay="100">Berikut adalah collection terpopuler menurut analisis kami.</p>
       </div>
 
       <div class="grid lg:grid-cols-4 grid-cols-1 h-full mt-10 gap-x-5 lg:gap-y-0 gap-y-5">
@@ -138,8 +146,7 @@
             </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt!</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
@@ -152,8 +159,7 @@
             </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt!</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
@@ -166,8 +172,7 @@
             </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt!</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
@@ -180,8 +185,7 @@
             </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt!</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
@@ -251,14 +255,14 @@
     <!-- benefits -->
 
     <!-- testimoni -->
-    <div class="w-[95%] lg:pt-20 py-28 mx-auto" id="testimoni">
-      <div class="grid grid-cols-1 justify-items-center">
+    <div class="w-[95%] lg:pt-20 py-28 mx-auto lg:h-screen" id="testimoni">
+      <div class="grid grid-cols-1 justify-items-center ">
         <h1 class="bg-primary px-4 py-2 w-36 text-2xl text-center text-white" data-aos="fade-up">Testimoni</h1>
-        <h1 class="text-5xl mt-5" data-aos="fade-up" data-aos-delay="50">Apa Kata Mereka?
+        <h1 class="lg:text-5xl text-4xl mt-5 text-center" data-aos="fade-up" data-aos-delay="50">Apa Kata Mereka?
         </h1>
       </div>
 
-      <div class="flex lg:flex-row flex-col h-full justify-between mt-10 lg:gap-x-10 gap-y-5">
+      <div class="flex lg:flex-row flex-col justify-between mt-10 lg:gap-x-10 gap-y-5">
         <div class="card w-full bg-base-300 shadow-xl" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
           <div class="card-body flex justify-center">
               <div class="avatar w-full flex justify-center ">
@@ -314,7 +318,6 @@
             <!-- <hr class="h-[5px] w-28 mb-2 bg-black" data-aos="fade-up" data-aos-duration="500" /> -->
             <h1 class="text-5xl mt-5 text-center" data-aos="fade-up" data-aos-delay="50">Ready to Build Your Appearance?
             </h1>
-            <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" class="mt-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, architecto!</p>
             <a href="#" class="mt-5 btn btn-outline transition-all text-center" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Coba Sekarang</a>
           </div>
         </div>
@@ -326,7 +329,7 @@
     <footer class="footer p-10 mt-52 bg-neutral text-base-content">
       <div>
         <a href="./index.html" class="lg:ml-0 ml-2 font-bold bg-gradient-to-r from-gray-100 to-gray-300 font-mediumm bg-clip-text text-transparent text-3xl lg:text-4xl">Viskashion</a>
-        <p>Powered by SMK Negeri 6 Surakarta<br>Providing quality fashion products since 2020</p>
+        <p>Powered by SMK Negeri 6 Surakarta<br>Providing quality fashion products since 2022</p>
       </div> 
       <div>
         <span class="footer-title">Services</span> 
@@ -351,13 +354,12 @@
     </footer>
     <!-- footer -->
 
-
     <script type="text/javascript" src="./dist/vanilla-tilt.js"></script>
     <script src="./dist/aos.js"></script>
     <script>
       window.addEventListener("scroll", () => {
         var header = document.getElementById("nav");
-        header.classList.toggle("bg-base-300/90", window.scrollY > 0);
+        header.classList.toggle("bg-base-300/70", window.scrollY > 0);
         header.classList.toggle("border-b", window.scrollY > 0);
       });
 
